@@ -1,0 +1,41 @@
+﻿<div class="container-fluid">
+    <div class="row">
+        <!-- Left Sidebar -->
+        <div class="col-2 sidebar">
+            <div class="store-header d-flex align-items-center">
+                <img src="/images/papa-bens-logo.png" alt="Store Logo" class="store-logo">
+                <h2 class="store-name">Papa Ben's</h2>
+            </div>
+            <button class="category-btn mains">MAINS</button>
+            <button class="category-btn">BREAKFAST</button>
+            <button class="category-btn">DESSERT</button>
+            <button class="category-btn">DRINKS</button>
+            <button class="category-btn">CONTAINERS</button>
+        </div>
+
+        <!-- Main Content -->
+        <div class="col-8 p-4">
+            <h1 class="mb-4" id="categoryTitle">MAINS</h1>
+            <div class="row g-4" id="menuItems"></div>
+        </div>
+
+        <!-- Right Sidebar - Cart -->
+        <div class="right-side-bar col-2 p-0">
+            <div class="cart-container">
+                <div class="cart-items">
+                    <h2 class="px-4 py-3" style="font-size: 30px;">Current Order</h2>
+                    <div id="cartItems"></div>
+                </div>
+                <div class="cart-summary">
+                    <div class="d-flex justify-content-between mb-3">
+                        <span class="h5 mb-0">TOTAL:</span>
+                        <span class="h5 mb-0" id="cartTotal">$0.00</span>
+                    </div>
+                    <button class="complete-order-btn" onclick="completeOrder()">
+                        Complete Order
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
