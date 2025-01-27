@@ -1,0 +1,252 @@
+﻿/* Store Header Styles */
+.store-header {
+    padding: 0;
+    background-color: #ecb6b6;
+}
+
+.store-logo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.store-name {
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    height: 100vh;
+    background-color: #ecb6b6;
+    padding: 0;
+    width: 12%;
+}
+
+.right-side-bar {
+    border-left: 1px solid rgb(228, 228, 228);
+    width: 20%;
+}
+
+/* Category Button Styles */
+.category-btn {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0;
+    text-align: center;
+    border: none;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+    .category-btn.mains {
+        background-color: #dc3545;
+        color: white;
+        border-radius: 8px;
+    }
+
+    .category-btn:not(.mains) {
+        background: none;
+        color: #333;
+    }
+
+/* Main Content Area */
+.col-8.p-4 {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 68%;
+}
+
+#menuItems {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+/* Menu Item Styles */
+.col-3 {
+    width: calc(25% - 15px) !important;
+    padding: 10px;
+    flex: 0 0 auto;
+    min-width: 240px;
+}
+
+.menu-item {
+    width: 100%;
+    height: 420px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+    .menu-item:hover {
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+.menu-image {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.card-body {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 220px;
+}
+
+.card-title {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.card-text {
+    margin-top: auto;
+    margin-bottom: 10px;
+}
+
+/* Cart Styles */
+.cart-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-items {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.cart-summary {
+    position: sticky;
+    bottom: 0;
+    background: white;
+    padding: 20px;
+    border-top: 1px solid #dee2e6;
+}
+
+/* Cart Item Controls */
+.quantity-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart-item-name {
+    font-size: 16px;
+}
+
+.quantity-btn {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #dee2e6;
+    background: white;
+    border-radius: 4px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.delete-btn {
+    color: #dc3545;
+    font-size: 24px;
+    background: none;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.cart-item {
+    padding: 15px 0;
+    border-bottom: 1px solid #dee2e6;
+}
+
+    .cart-item .item-quantity {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+/* Complete Order Button */
+.complete-order-btn {
+    background-color: #212529;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    .complete-order-btn:hover {
+        background-color: #343a40;
+    }
+
+.item-total {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Button Styles */
+.d-grid.gap-2 {
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+.btn-dark {
+    padding: 8px;
+    margin-bottom: 5px;
+    transition: background-color 0.3s;
+}
+
+    .btn-dark:hover {
+        background-color: #343a40;
+    }
+
+/* Price Display */
+.mb-2 {
+    margin-top: auto;
+    margin-bottom: 10px !important;
+}
+
+/* Container Fluid Override */
+.container-fluid {
+    padding: 0;
+}
+
+/* Row Override */
+.row {
+    margin: 0;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/* Responsive Design */
+@media (max-width: 1400px) {
+    .col-3 {
+        width: calc(25% - 15px) !important;
+        min-width: 220px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .col-3 {
+        width: calc(25% - 15px) !important;
+        min-width: 200px;
+    }
+}
